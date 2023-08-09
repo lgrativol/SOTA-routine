@@ -195,7 +195,7 @@ class ShuffleNetV2(nn.Module):
         features = out.view(out.size(0), -1)
         out = self.linear(features)
 
-        return out,features
+        return out
 
 
 configs = {

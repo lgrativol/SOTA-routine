@@ -156,6 +156,9 @@ class ResNet(nn.Module):
 
         return x
 
+def resnet8(num_classes, large_input, width):
+    return ResNet(BasicBlock, [(1, 1, 1), (1, 2, 2), (1, 2, 4)], num_classes, large_input, width)
+
 def resnet18(num_classes, large_input, width):
     return ResNet(BasicBlock, [(2, 1, 1), (2, 2, 2), (2, 2, 4), (2, 2, 8)], num_classes, large_input, width)
 

@@ -41,6 +41,7 @@ import numpy as np
 from accelerate import Accelerator
 from torchinfo import summary
 from resnet import *
+from shufflenetv2 import shufflenetv2
 
 from utils import ExponentialMovingAverage, RandomMixup, RandomCutmix
 from torch.utils.data.dataloader import default_collate
